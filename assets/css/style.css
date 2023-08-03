@@ -1,0 +1,120 @@
+:root {
+  --bs-primary: #648fda;
+  --bs-secondary: #ebe4b8;
+  --bs-success: #82e87b;
+  --bs-info: #b39fe7;
+  --bs-warning: #fee952;
+  --bs-danger: #ffb099;
+  --bs-dark: #0e1d36;
+  --bs-gray: #73737e;
+  --bs-light: #e3e6ef;
+  --bs-white: #ffffff;
+  --bs-black: #000000;
+  
+  --bs-primary-rgb: 100, 143, 218;
+  --bs-secondary-rgb: 235, 228, 184;
+  --bs-success-rgb: 130, 232, 123;
+  --bs-info-rgb: 179, 159, 231;
+  --bs-warning-rgb: 254, 233, 82;
+  --bs-danger-rgb: 255, 176, 153;
+  --bs-dark-rgb: 14, 29, 54;
+  --bs-gray-rgb: 115, 115, 126;
+  --bs-light-rgb: 227, 230, 239;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+.form-select {
+  border-bottom-color: var(--bs-primary);
+  border-bottom-width: 2px;
+}
+
+.form-select:focus {
+  box-shadow: none;
+} 
+
+/* .table-group-divider {
+  border-color: var(--bs-gray);
+} */
+
+.block {
+  border: 2px solid var(--bs-light);
+  color: var(--bs-light);
+  text-align: center;
+  padding: 4px 10px;
+  display: grid;
+  place-items: center;
+}
+
+.text-gray {
+  color: var(--bs-gray);
+}
+
+.block-num {
+  font-size: 12px;
+}
+
+.block-icon {
+  font-size: 24px;
+}
+
+.heading-color-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 38px;
+}
+
+@media only screen and (max-width: 767.8px) {
+  .heading-color-content {
+    gap: 24px;
+    justify-content: flex-start;
+  }
+}
+
+.text-label {
+  color: var(--bs-gray);
+  font-size: 12px;
+}
+
+.block-indicator {
+  display: flex;
+  flex-direction: column;
+}
+
+.indicator-line {
+  border: 1px solid;
+  border-color: inherit;
+  border-radius: 2px;
+  background-color: inherit;
+  width: 20px;
+  height: 5px;
+}
+
+.indicator-num {
+  font-size: 32px;
+
+}

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tab Title -->
+  <title>Grid Layout with Bootstrap</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <!-- Boxicon Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
+  <!-- Add Bootstrap CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom style -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body class="d-flex flex-column">
+  <div class="container-fluid mt-4">
+
+    <!-- ========================== Breadcrumb: Start =============================== -->
+     <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#" class="text-warning fs-5"><span class="bx bx-left-arrow-alt"></span></a></li>
+        <li class="breadcrumb-item"><a href="#" class="text-warning fs-5"><span class="bx bx-home-alt"></span></a></li>
+        <li class="breadcrumb-item"><a href="#" class="text-gray small">Pre-Sales</a></li>
+        <li class="breadcrumb-item text-primary small active" aria-current="page">Graphical Sales Chart</li>
+      </ol>
+    </nav>
+    <!-- ========================== Breadcrumb: End =============================== -->
+
+    <!-- ========================== Page Heading: Start =============================== -->
+    <section class="page-heading mb-4">
+      <div class="row">
+        <div class="col-lg-5 col-md-4">
+          <div class="row row-gap-md-0 row-gap-3 mb-4">
+            <div class="col-sm-6">
+              <select class="form-select border-bottom-primary" aria-label="Select Organization">
+                <option selected>Mittal Tower</option>
+                <option value="1">Mittal Tower</option>
+                <option value="2">Amit Pharmacy</option>
+                <option value="3">Capital Ventures</option>
+              </select>
+            </div>
+            <div class="col-sm-6">
+              <select class="form-select border-bottom-primary" aria-label="Select Percentage">
+                <option selected>%</option>
+                <option value="1">%</option>
+                <option value="2">shares</option>
+                <option value="3">currency</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <div class="heading-color-content">
+            <div class="block-indicator">
+              <span class="text-label">Available</span>
+              <div class="indicator-line border-gray"></div>
+              <span class="fs-5 text-gray">99</span>
+            </div>
+            <div class="block-indicator">
+              <span class="text-label">Booked</span>
+              <div class="indicator-line bg-success border-success"></div>
+              <span class="fs-5 text-success">42</span>
+            </div>
+            <div class="block-indicator">
+              <span class="text-label">Rehab allocated</span>
+              <div class="indicator-line bg-info border-info"></div>
+              <span class="fs-5 text-info">29</span>
+            </div>
+            <div class="block-indicator">
+              <span class="text-label">Not for sale/Refuge</span>
+              <div class="indicator-line bg-danger border-danger"></div>
+              <span class="fs-5 text-danger">09</span>
+            </div>
+            <div class="block-indicator">
+              <span class="text-label">On hold</span>
+              <div class="indicator-line bg-warning border-warning"></div>
+              <span class="fs-5 text-warning">14</span>
+            </div>
+            <div class="block-indicator">
+              <span class="text-label">Land Owner</span>
+              <div class="indicator-line bg-light border-light"></div>
+              <span class="fs-5 text-light">14</span>
+            </div>
+            <button type="button" class="me-0 border-0 p-0 bg-transparent text-primary align-self-start fs-1"><span class="bx bx-printer"></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================== Page Heading: End =============================== -->
+
+    <!-- ========================== Table: Start -->
+    <table class="table table-bordered">
+      <thead class="border-bottom-0">
+        <tr>
+          <th scope="col" class="text-end"><span class="fas fa-filter"></span></th>
+          <th scope="col" class="text-center">A Wing</th>
+          <th scope="col" class="text-center">B Wing</th>
+          <th scope="col" class="text-center">C Wing</th>
+        </tr>
+      </thead>
+      <tbody class="">
+        <!-- ================= 5th Floor: Starts =================  -->
+        <tr>
+          <th scope="row">
+            <div class="d-flex align-items-center justify-content-between gap-1 flex-wrap">
+              <span class="side-heading-text">5th Floor</span>
+              <span class="bx bx-right-arrow-circle fs-5 text-gray"></span>
+            </div>
+            <a href="javascript:;" title="Upload" class="small">Upload</a>
+          </th>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0501</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0502</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-warning border-warning">
+                  <span class="block-icon bx bx-home-heart text-dark"></span>
+                </div>
+                <span class="block-num">0503</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0504</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-info border-info">
+                  <span class="block-icon bx bx-home-alt text-dark"></span>
+                </div>
+                <span class="block-num">0505</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0506</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0501</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-danger border-danger">
+                  <span class="block-icon bx bx-home-smile text-dark"></span>
+                </div>
+                <span class="block-num">0502</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-secondary border-secondary">
+                  <span class="block-icon bx bx-dice-4 text-dark"></span>
+                </div>
+                <span class="block-num">0503</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0504</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0505</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0506</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0501</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0502</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0503</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0504</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0505</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0506</span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- ================= 5th Floor: Ends =================  -->
+        <!-- ================= 4th Floor: Starts =================  -->
+        <tr>
+          <th scope="row">
+            <div class="d-flex align-items-center justify-content-between gap-1 flex-wrap">
+              <span class="side-heading-text">4th Floor</span>
+              <span class="bx bx-right-arrow-circle fs-5 text-gray"></span>
+            </div>
+            <a href="javascript:;" title="Upload" class="small">View</a>
+          </th>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0401</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0402</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-warning border-heart">
+                  <span class="block-icon bx bx-home-heart text-dark"></span>
+                </div>
+                <span class="block-num">0403</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0404</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-info border-info">
+                  <span class="block-icon bx bx-home-alt text-dark"></span>
+                </div>
+                <span class="block-num">0405</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0406</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0401</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-danger border-danger">
+                  <span class="block-icon bx bx-home-smile text-dark"></span>
+                </div>
+                <span class="block-num">0402</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-secondary border-secondary">
+                  <span class="block-icon bx bx-dice-4 text-dark"></span>
+                </div>
+                <span class="block-num">0403</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0404</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0405</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0406</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0401</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0402</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0403</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0404</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0405</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0406</span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- ================= 4th Floor: Ends =================  -->
+        <!-- ================= 3rd Floor: Starts =================  -->
+        <tr>
+          <th scope="row">
+            <div class="d-flex align-items-center justify-content-between gap-1 flex-wrap">
+              <span class="side-heading-text">3rd Floor</span>
+              <span class="bx bx-right-arrow-circle fs-5 text-gray"></span>
+            </div>
+            <a href="javascript:;" title="Upload" class="small">View</a>
+          </th>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-danger border-danger">
+                  <span class="block-icon bx bx-home-smile text-dark"></span>
+                </div>
+                <span class="block-num">0302</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-danger border-danger">
+                  <span class="block-icon bx bx-home-smile text-dark"></span>
+                </div>
+                <span class="block-num">0302</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-warning border-heart">
+                  <span class="block-icon bx bx-home-heart text-dark"></span>
+                </div>
+                <span class="block-num">0303</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-danger border-danger">
+                  <span class="block-icon bx bx-home-smile text-dark"></span>
+                </div>
+                <span class="block-num">0302</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-info border-info">
+                  <span class="block-icon bx bx-home-alt text-dark"></span>
+                </div>
+                <span class="block-num">0305</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-danger border-danger">
+                  <span class="block-icon bx bx-home-smile text-dark"></span>
+                </div>
+                <span class="block-num">0306</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0301</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-danger border-danger">
+                  <span class="block-icon bx bx-home-smile text-dark"></span>
+                </div>
+                <span class="block-num">0302</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-secondary border-secondary">
+                  <span class="block-icon bx bx-dice-4 text-dark"></span>
+                </div>
+                <span class="block-num">0303</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0304</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0305</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0306</span>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0301</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0302</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0303</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0304</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0305</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0306</span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- ================= 3rd Floor: Ends =================  -->
+        <!-- ================= 2nd Floor: Starts =================  -->
+        <tr>
+          <th scope="row">
+            <div class="d-flex align-items-center justify-content-between gap-1 flex-wrap">
+              <span class="side-heading-text">2nd Floor</span>
+              <span class="bx bx-right-arrow-circle fs-5 text-gray"></span>
+            </div>
+            <a href="javascript:;" title="Upload" class="small">View</a>
+          </th>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0201</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0202</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-warning border-warning">
+                  <span class="block-icon bx bx-home-heart text-dark"></span>
+                </div>
+                <span class="block-num">0203</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0204</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-info border-info">
+                  <span class="block-icon bx bx-home-alt text-dark"></span>
+                </div>
+                <span class="block-num">0205</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0206</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0201</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-danger border-danger">
+                  <span class="block-icon bx bx-home-smile text-dark"></span>
+                </div>
+                <span class="block-num">0202</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-secondary border-secondary">
+                  <span class="block-icon bx bx-dice-4 text-dark"></span>
+                </div>
+                <span class="block-num">0203</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0204</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0205</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0206</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-warning border-warning">
+                  <span class="block-icon bx bx-home-heart text-dark"></span>
+                </div>
+                <span class="block-num">0201</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-warning border-warning">
+                  <span class="block-icon bx bx-home-heart text-dark"></span>
+                </div>
+                <span class="block-num">0202</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-warning border-warning">
+                  <span class="block-icon bx bx-home-heart text-dark"></span>
+                </div>
+                <span class="block-num">0203</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-warning border-warning">
+                  <span class="block-icon bx bx-home-heart text-dark"></span>
+                </div>
+                <span class="block-num">0204</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-warning border-warning">
+                  <span class="block-icon bx bx-home-heart text-dark"></span>
+                </div>
+                <span class="block-num">0205</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1 bg-success border-success">
+                  <span class="block-icon bx bx-home-circle text-dark"></span>
+                </div>
+                <span class="block-num">0206</span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- ================= 2nd Floor: Ends =================  -->
+        <!-- ================= 1st Floor: Starts =================  -->
+        <tr>
+          <th scope="row">
+            <div class="d-flex align-items-center justify-content-between gap-1 flex-wrap">
+              <span class="side-heading-text">1st Floor</span>
+              <span class="bx bx-right-arrow-circle fs-5 text-gray"></span>
+            </div>
+            <a href="javascript:;" title="Upload" class="small">View</a>
+          </th>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0101</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0102</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0103</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0104</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0105</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0106</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0101</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0102</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0103</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0104</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0105</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0106</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0101</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0102</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0103</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0104</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0105</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0106</span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- ================= 1st Floor: Ends =================  -->
+        <!-- ================= Ground Floor: Starts =================  -->
+        <tr>
+          <th scope="row">
+            <div class="d-flex align-items-center justify-content-between gap-1 flex-wrap">
+              <span class="side-heading-text">Ground Floor</span>
+              <span class="bx bx-right-arrow-circle fs-5 text-gray"></span>
+            </div>
+            <a href="javascript:;" title="Upload" class="small">View</a>
+          </th>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0001</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0002</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0003</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0004</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0005</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0006</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0001</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0002</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0003</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0004</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0005</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0006</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="d-flex flex-wrap gap-2 justify-content-between">
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0001</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0002</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0003</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0004</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0005</span>
+              </div>
+              <div class="home-block text-center">
+                <div class="block rounded-1">
+                  <span class="block-icon bx bx-home-alt-2"></span>
+                </div>
+                <span class="block-num">0006</span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- ================= Ground Floor: Ends =================  -->
+      </tbody>
+    </table>
+
+  </div>
+
+  <footer class="mt-auto text-center border-top py-2">
+    <div class="container-fluid">
+      <span class="text-gray">This is footer</span>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
